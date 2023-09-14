@@ -1,4 +1,3 @@
----
 apiVersion: apps/v1
 kind: Deployment
 metadata:
@@ -15,20 +14,23 @@ spec:
     spec:
       containers:
       - name: gitops-secrets-app
-        image: docker.io/kostiscodefresh/gitops-secrets-sample-app:latest 
-        imagePullPolicy: Always   
+        image: docker.io/kostiscodefresh/gitops-secrets-sample-app:latest
+        imagePullPolicy: Always
         ports:
         - containerPort: 8080
         volumeMounts:
+        - name: app-config
+          mountPath: "/secrets/app.config/"
+          readOnly: true
         - name: mysql
           mountPath: "/secrets/mysql"
-          readOnly: true     
+          readOnly: true
         - name: paypal
           mountPath: "/secrets/ssl"
-          readOnly: true              
+          readOnly: true
         - name: sign-keys
           mountPath: "/secrets/sign/"
-          readOnly: true   
+          readOnly: true
         livenessProbe:
           httpGet:
             path: /health
@@ -43,12 +45,12 @@ spec:
           secretName: mysql-credentials
       - name: paypal
         secret:
-          secretName: paypal-cert         
+          secretName: paypal-cert
       - name: sign-keys
         projected:
           sources:
-            - secret:
-               name: key-private 
-            - secret:
-               name: key-public    
-           
+          - secret:
+              name: key-private
+          - secret:
+              name: key-public
+
