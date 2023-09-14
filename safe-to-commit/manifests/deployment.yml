@@ -43,6 +43,9 @@ spec:
       - name: mysql
         secret:
           secretName: mysql-credentials
+      - name: app-config
+        secret:
+          secretName: app-config
       - name: paypal
         secret:
           secretName: paypal-cert
