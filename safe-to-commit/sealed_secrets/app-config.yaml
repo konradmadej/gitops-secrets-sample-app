@@ -15,4 +15,14 @@ spec:
       name: mysql-credentials
       namespace: gitops-secrets
     data:
-      app.config: "<?xml version=\"1.0\"?>\n<configuration>\n    <connectionStrings>   \n        <add name=\"MyKey\" \n            connectionString=\"Server={{ index . \"connection\" }};Database=myDataBase;Uid={{ index . \"username\" }};Pwd={{ index . \"password\" }};\"\n            providerName=\"System.Data.SqlClient\"/>\n    </connectionStrings>\n</configuration>\n            #magic___^_^___line\n            #magic___^_^___line\n"
+      app.config: |
+        <?xml version="1.0"?>
+        <configuration>
+            <connectionStrings>   
+                <add name="MyKey" 
+                    connectionString="Server={{ index . "connection" }};Database=myDataBase;Uid={{ index . "username" }};Pwd={{ index . "password" }};"
+                    providerName="System.Data.SqlClient"/>
+            </connectionStrings>
+        </configuration>
+
+
