@@ -1,0 +1,18 @@
+apiVersion: bitnami.com/v1alpha1
+kind: SealedSecret
+metadata:
+  creationTimestamp: null
+  name: mysql-credentials
+  namespace: gitops-secrets
+spec:
+  encryptedData:
+    connection: AgBMPIle98ORUPSbkhvt3te+HzndXYnKCJbmX93SBte2GtCkQ9fv20Q0gxtyFoQq/wXj8StfbWoqsMFBLtx+whudogRNsJ3blXe6SmmB5qmJLuKXAeizxvJBjnmVWuywFeLnv4NKl6RCvWNjR2YUSMayG333fgj2K/0CS24E9CdGsyBdpwRWY0psR8e98FAdDl0Gq95KO5qDfFuGTteh3EbKO0Ke0mAqmi35OwTSqHl9cHIOkg68oS9I1Y+bVuYHAiwQW1Q3uTfIItjCk80x+OcN63yQU/NWJVXOMhqlw4KTXNn0YOjnfmYTNR23HPmwVXOiebllJAamJ4SZYjnzduf81b+2yO5eIQdRbZoHs0657gJ1GIVe6iWbKtLZYpvd/rsWvcmWxHuLG5jw4U53Go8hT0yYAYL6CxhCmzLQiSAR189tZf8u0FxP4Zsx0IvXyHUyFyzpW+qiP10jCgZBSEkeTFdVQ7ZK4Hz5s5Er9yEiCZdttLygmQbrXb3rtf1xqgr9KwHUcX3SPZtuhy+sRylXD4hdQilW723iV4UL4pTDYtZlE+iEVOvJ5M33Ly3T0kfJy3Q7d8YDqDNBdw5l2KfKtMcJciXslS/P4ooc1TjbCT9DVlzhWh5aL3ohQWe5e/CVHG4vFLmu+r7bFv6bH4KuEiJ1ydpeTx395pESstvddvx7Z5wNTq/CGMbA49mGuoIR6bRqPRpEkyksGLzZ+EhFYO24LqnxipM/iitz23Cb4nI=
+    password: AgB5l2cXRUGz4bL2+7co8DhdMf+1IfyE6CxI+OpDeWuiVoo1vlndXyzxy0JS3jZL5WB0Z1Qbx8qyLR/3b3AOvNjnBLHRdQQ2RnKON5Tp0Ih91MLESifKDJSSom95IR+1DwenjH9yKNX1y69vSp/HK6fPlNXtzimcJR3/MmKzsxpO4toKqHf9o31bRkRknL7WzTk+raJ91qkpBX/B6VUgErQc/Ao4ud/ACbsjFbh2ThMwM6pCjxzORblAMpnmnUf+QJhMHGTyIXEBqH0u8XdgBSi19yqCdiz83EqM3seeMcjiYK3P1bL6M3TgCVLs7v6b5+IZ7OCCAUXR8rG7fIx+zswUkRZWNSt/K6b7Q5WETxIFEFkEA4bCnjRnVNHJ5n7KlW7KmgRxy2qoXRhY4rq0H7g8eNaQObDMjU0UiSGdod0oR6W8rEGCmGJAuyhvGWmw0gnzL3YuM6psk9Vy92OL3iBvU/C/DUl2MNva+EGFsfG4KiSVWcFT8YEPOVL/0kJYo1202zA7b2z6Tw1e0as747wQq1p1oA7PWjHLT2vFAJvV3ZPe5psbgAM59j4rTrrGdEzsIFQFoD4hheiCZ9iHlam5Wv8cEyswzMkBTiXwDQWY/sTuqTfo+pTu6jRqEULIEXvd8cmUpUsQJDAjfzIO2+l+5NZhtlLzIbfKlOpvEvjTh99pl7Kx3uI28ZHUmaMfZUfsq+DMUHBIaEKhPfdjA3w=
+    username: AgAF2aiPdwRUU2u3rpTFHcgrb1jf3wfXAKgMc0r0qcjXIJk2z6GyjUEzSgPRe3ahQ8EFTFrjL4xcm5SzcX/oVpS8HG0LS1M9halh44H81XzLpAU8bmxUCK3tvQ2kBkThz2KoZVOG78F2AsihTCE4sDVrj1kfkZ9rNZc1IZ7yzKrWlWjzvX1bHuFUoHTCw9ZylaJZAZ0t4TaGWXGwMDkbTY9MqMKFdSL2PRaBKQm0fItfFW2+rDektfaMCoGOlp1IlaEAdDpoc6quj5udZ7qEhTjG8HHO8LEDh1yGdSClyVSCMnV+V73NI5jhWUcXBgzuj34l35lhZhhoiqUN9xBv5/TrqmabqjsmM4aRGD/lijSZbrrTQAId+DgQkr7fmGEh03iJQQQyPEZiPqzeUaUVLDVUi+tpXbX2h3EFRuEhergd3q0uVvQa0w//7MIdDvlxXTnrcMGu7dRAVLGt7PGPDwvJESE2eOPItENwY1uZxY3e6m8MY6Si/y8Jkcdew+KQ09GSqn65VCciyTHzd+sCTb2bMdiEKBZskf6MOLJG2OtJ8k4gkqqOF3nAMeOXnkL/yRzgTqQOzfCpj/v6HtjoDye4XEHxKR9i3HJ586DaWy3LBhYQeMVohO8CYBsMYiT79l55NBj8YeTiaw9YveLam+ty70rMaALqb4ONCizk0JF8PafnFBs7daZgu83A+wy8PAMw9fGnKqrEfje+aw==
+  template:
+    metadata:
+      creationTimestamp: null
+      name: mysql-credentials
+      namespace: gitops-secrets
+    data:
+      app.config: "<?xml version=\"1.0\"?>\n<configuration>\n    <connectionStrings>   \n        <add name=\"MyKey\" \n            connectionString=\"Server={{ index . \"connection\" }};Database=myDataBase;Uid={{ index . \"username\" }};Pwd={{ index . \"password\" }};\"\n            providerName=\"System.Data.SqlClient\"/>\n    </connectionStrings>\n</configuration>\n            #magic___^_^___line\n            #magic___^_^___line\n"
